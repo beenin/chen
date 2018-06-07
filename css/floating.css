@@ -1,0 +1,113 @@
+.floating_wrap {
+  position: fixed;
+  right: 50px;
+  bottom: 200px;
+}
+.floating_box {
+  position: relative;
+  width: 140px;
+  color: #fff;
+}
+.floating_box:hover .floating_footer {
+  display: block;
+}
+.floating_head {
+  position: absolute;
+  top: -34px;
+  left: 5px;
+  width: 135px;
+  height: 68px;
+}
+.floating_head_ball {
+  position: absolute;
+  left: -10px;
+  width: 68px;
+  height: 68px;
+}
+.floating_head_ball_bg {
+  width: 68px;
+  height: 68px;
+  background-image: url('../images/floating-ball.png');
+}
+.floating_head_ball_text {
+  position: absolute;
+  top: 0;
+  width: 68px;
+  line-height: 68px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.floating_head_ball_text span {
+  font-size: 14px;
+}
+.floating_head_detection {
+  width: 135px;
+  height: 43px;
+  margin-top: 13px;
+  background-image: url('../images/radius-bg.png');
+}
+.floating_head_detection p {
+  padding-left: 60px;
+  line-height: 21px;
+  font-size: 12px;
+}
+.floating_head_detection p i {
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.floating_head_detection p i.icon-check {
+  background-image: url('../images/icon-check.png');
+}
+.floating_head_detection p i.icon-cross {
+  background-image: url('../images/icon-cross.png');
+}
+.floating_head_detection p span {
+  vertical-align: top;
+}
+.floating_footer {
+  display: none;
+  position: absolute;
+  width: 110px;
+  padding: 40px 15px 10px;
+  border-radius: 0px 0px 5px 5px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+}
+.floating_footer p {
+  line-height: 22px;
+  font-size: 12px;
+}
+.floating_footer p span {
+  float: right;
+  color: #ffec1e;
+}
+.rotate_info .floating_head_ball_bg {
+  -webkit-animation: rotating 1s linear infinite;
+  -ms-animation: rotating 1s linear infinite;
+}
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotating {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  50% {
+    -ms-transform: rotate(180deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+  }
+}

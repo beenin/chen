@@ -1,578 +1,122 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" >
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
-<title>ºşÄÏÊ¡ÉÌÊÂÖ÷ÌåĞÅÏ¢¹«Ê¾Æ½Ì¨</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<link href="images/imagesUrl.css" rel="stylesheet" type="text/css" />
-<link href="css/tablecloth.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/tablecloth.js"></script>
-    <script type="text/javascript">
-        function setTab(name,cursel,n){
-            for(i=1;i<=n;i++){
-                var menu=document.getElementById(name+i);
-                var con=document.getElementById("con_"+name+"_"+i);
-                menu.className=i==cursel?"hover":"";
-                con.style.display=i==cursel?"block":"none";
-            }
-        }
-        function tableChange(selectId,n){
-            for(i=1;i<=n;i++){
-                var selectValue=document.getElementById(selectId).value;
-                var tableDiv=document.getElementById(selectId+i);
-                tableDiv.style.display=i==selectValue?"block":"none";
-            }
-        }
-    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ç”µå­æ–‡ä»¶çœŸå®æ€§å‡­è¯ç³»ç»Ÿ</title>
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/floating.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <div class="mainBody">
-        <div class="top"></div>
-        <div id="Tab1">
-            <div class="Menubox">
-                <ul>
-                    <li id="one1" onclick="setTab('one',1,5)" class="hover">ÊĞ³¡Ö÷ÌåĞÅÓÃĞÅÏ¢¹«ÖÚ²éÔÄ²¾</li>
-                    <li id="one2" onclick="setTab('one',2,5)">¾­ÓªÒì³£ÃûÂ¼</li>
-                    <li id="one3" onclick="setTab('one',3,5)">ÑÏÖØÎ¥·¨ÊĞ³¡Ö÷ÌåºÚÃûµ¥</li>
-                    <li id="one4" onclick="setTab('one',4,5)">ÊĞ³¡Ö÷Ìå×ÔÖ÷Éê±¨ĞÅÏ¢Èë¿Ú</li>
-                    <li id="one5" onclick="setTab('one',5,5)">ÍøÉÏ×¢²á´óÌü</li>
-                </ul>
-            </div>
-            <div class="Contentbox">
-                <div id="con_one_1" class="hoverDiv">
-                    <div class="ctrlCYB" style="margin-top: 30px;">
-                        <label class="font" style="vertical-align: middle;">Ãû³Æ¹Ø¼ü´Ê</label>
-                        <input type="text" class="font" style="height: 20px;width: 300px;">&nbsp;&nbsp;
-                        <label class="font" style="vertical-align: middle;">×¢²áºÅ</label>
-                        <input type="text" class="font" style="height: 20px;width: 300px;">
-                    </div>
-                    <div class="ctrlCYB" style="margin-top: 10px;">
-                        <label class="font" style="vertical-align: middle;">µÇ¼Ç²¾Àà±ğ</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" name="xxx" style="vertical-align: middle;">
-                        <label class="font" style="vertical-align: middle;">ÆóÒµ</label>&nbsp;&nbsp;
-                        <input type="radio" name="xxx" style="vertical-align: middle;">
-                        <label class="font" style="vertical-align: middle;">Å©Ãñ×¨ÒµºÏ×÷Éç</label>&nbsp;&nbsp;
-                        <input type="radio" name="xxx" style="vertical-align: middle;">
-                        <label class="font" style="vertical-align: middle;">¸öÌå¹¤ÉÌ</label>
-                    </div>
-                    <div class="ctrlCYB" style="margin-top: 10px;height: 25px;text-align: center;">
-                        <input type="submit" class="submitBtn" style="border: none;" value="¼ìË÷">
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;height: 1px;background-color:#0098c4;"></div>
-                    <div class="ctrlCYB font1" style="width:900px;margin: 10px 0px 0px 50px;">
-                        Äú¿ÉÒÔ²éÔÄµ½ÒÔÏÂĞÅÏ¢
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 8px 0px 10px 50px;">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>×¢²áµÇ¼ÇĞÅÏ¢</th><th>±¸°¸ĞÅÏ¢</th><th>¹ÉÈ¨³öÖÊ¶¯²úµÖÑº²ú±£È«ĞÅÏ¢</th>
-                                <th>×ÊÖÊ×Ê¸ñĞí¿ÉĞÅÏ¢</th><th>Äê¶È±¨¸æĞÅÏ¢</th><th>ĞĞÕş´¦·£ĞÅÏ¢</th>
-                            </tr>
-                            <tr>
-                                <td>×¡Ëù£¨¾­Óª³¡Ëù£©</td><td>¹«Ë¾¶­ÊÂ¡¢¼àÊÂ¡¢¾­Àí</td><td>¶¯²úµÖÑºĞÅÏ¢</td>
-                                <td>×ÊÖÊ×Ê¸ñÖ¤ĞÅÏ¢</td><td>×Ê²ú×´¿ö</td><td>´¦·£ÒÀ¾İ</td>
-                            </tr>
-                            <tr>
-                                <td>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</td><td>·ÖÖ§»ú¹¹µÇ¼ÇÇé¿ö</td><td>²Æ²ú±£È«ĞÅÏ¢ </td>
-                                <td>&nbsp;</td><td>ÔËÓª×´Ì¬</td><td>´¦·£ÄÚÈİ</td>
-                            </tr>
-                            <tr>
-                                <td>×¢²á×Ê±¾£¨³ö×ÊÊı¶î£©</td><td>ÇåËã×éĞÅÏ¢</td><td>&nbsp;</td>
-                                <td>&nbsp;</td><td>ÁªÏµ·½Ê½</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>Ö÷ÌåÀàĞÍ</td><td>&nbsp;</td><td>&nbsp;</td>
-                                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>¾­Óª·¶Î§</td><td>&nbsp;</td><td>&nbsp;</td>
-                                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>ÓªÒµÆÚÏŞ</td><td>&nbsp;</td><td>&nbsp;</td>
-                                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>³ö×ÊÈË£¨¹É¶«¡¢·¢ÆğÈË¡¢ºÏ»ïÈË£©</td><td>&nbsp;</td><td>&nbsp;</td>
-                                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div id="con_one_2" class="hoverDiv" style="display:none">
-                    <div class="ctrlCYB font1" style="width:900px;margin: 18px 0px 0px 50px;">
-                        Äú¿ÉÒÔä¯ÀÀµ½ÒÔÏÂ¾­ÓªÒì³£¹«Ê¾ÃûÂ¼ĞÅÏ¢
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>Î´°´ÆÚÂÄĞĞ¹«Ê¾Äê¶È±¨¸æ</th><td>Ãû³Æ</td><td>×¡Ëù£¨¾­Óª³¡Ëù£©</td><td>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</td><td>Î´¹«Ê¾Äê¶È</td>
-                            </tr>
-                            <tr>
-                                <th>Î´°´ÆÚÂÄĞĞ¹«Ê¾×ÊÖÊ×Ê¸ñĞÅÏ¢</th><td>Ãû³Æ</td><td>×¡Ëù£¨¾­Óª³¡Ëù£©</td><td>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</td><td>Î´¹«Ê¾×ÊÖÊ×Ê¸ñĞÅÏ¢ </td>
-                            </tr>
-                            <tr>
-                                <th>µÇ¼Ç×¡Ëù²éÎŞÏÂÂä</th><td>Ãû³Æ</td><td>×¡Ëù£¨¾­Óª³¡Ëù£©</td><td>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</td><td>×î½üÎŞ·¨ÁªÏµÊ±¼ä </td>
-                            </tr>
-                            <tr>
-                                <th>¹«Ê¾ĞÅÏ¢ÅªĞé×÷¼Ù</th><td>Ãû³Æ</td><td>×¡Ëù£¨¾­Óª³¡Ëù£©</td><td>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</td><td>ÅªĞé×÷¼ÙÇé¿ö</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 30px 0px 0px 50px;">
-                        <label class="font" style="vertical-align: middle;">¾­ÓªÒì³£Ö÷ÌåÀà±ğ</label>&nbsp;&nbsp;
-                        <input type="radio" name="xxx" style="vertical-align: middle;">
-                        <label class="font" style="vertical-align: middle;">ÆóÒµ</label>&nbsp;
-                        <input type="radio" name="xxx" style="vertical-align: middle;">
-                        <label class="font" style="vertical-align: middle;">Å©Ãñ×¨ÒµºÏ×÷Éç</label>&nbsp;
-                        <input type="radio" name="xxx" style="vertical-align: middle;">
-                        <label class="font" style="vertical-align: middle;">¸öÌå¹¤ÉÌ</label>&nbsp;
-                        <input type="submit" class="submitBtn" style="border: none;" value="»ñÈ¡">
-                    </div>
-                    <div class="ctrlCYB font" style="width:900px;margin: 10px 0px 0px 50px;">
-                        <label class="font" style="vertical-align: middle;">Òì³£ÀàĞÍ£º</label>
-                        <select id="jyycml" style="vertical-align: middle;" onchange="tableChange(this.id,'4')">
-                            <option value="1" selected>Î´°´ÆÚÂÄĞĞ¹«Ê¾Äê¶È±¨¸æ</option>
-                            <option value="2">Î´°´ÆÚÂÄĞĞ¹«Ê¾×ÊÖÊ×Ê¸ñĞÅÏ¢</option>
-                            <option value="3">µÇ¼Ç×¡Ëù²éÎŞÏÂÂä</option>
-                            <option value="4">¹«Ê¾ĞÅÏ¢ÅªĞé×÷¼Ù</option>
-                        </select>
-                        <label class="font" style="vertical-align: middle;">¹«Ê¾Ê±¼ä£º</label>
-                        <label class="font" style="vertical-align: middle;">********</label>
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;" id="jyycml1">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>ĞòºÅ</th><th>Ãû³Æ</th><th>×¡Ëù£¨¾­Óª³¡Ëù£©</th>
-                                <th>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</th><th>Î´¹«Ê¾Äê¶È</th>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;display: none;" id="jyycml2">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>ĞòºÅ</th><th>Ãû³Æ</th><th>×¡Ëù£¨¾­Óª³¡Ëù£©</th>
-                                <th>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</th><th>Î´°´ÆÚÂÄĞĞ¹«Ê¾×ÊÖÊ×Ê¸ñĞÅÏ¢</th>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;display: none;" id="jyycml3">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>ĞòºÅ</th><th>Ãû³Æ</th><th>×¡Ëù£¨¾­Óª³¡Ëù£©</th>
-                                <th>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</th><th>µÇ¼Ç×¡Ëù²éÎŞÏÂÂä</th>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;display: none;" id="jyycml4">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>ĞòºÅ</th><th>Ãû³Æ</th><th>×¡Ëù£¨¾­Óª³¡Ëù£©</th>
-                                <th>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</th><th>¹«Ê¾ĞÅÏ¢ÅªĞé×÷¼Ù</th>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB" style="width:370px;height:28px;margin: 10px 0px 30px 50px;text-align: left;">
-                        <label class="font" style="vertical-align: middle;">Ãû³Æ¹Ø¼ü×Ö</label>
-                        <input type="text" class="font" style="height: 20px;width:200px;">&nbsp;&nbsp;
-                        <input type="submit" class="submitBtn" style="border: none;" value="¼ìË÷">
-                    </div>
-                    <div class="ctrlCYB" style="width:530px;height:28px;margin: 10px 0px 30px 0px;text-align: center;">
-                        <label class="font" style="vertical-align: middle;line-height: 28px;">´Ë´¦·Å·ÖÒ³,tableÃ¿Ò³10ÌõĞÅÏ¢</label>
-                    </div>
-                </div>
-                <div id="con_one_3" class="hoverDiv" style="display:none">
-                    <div class="ctrlCYB font1" style="width:900px;margin: 18px 0px 0px 50px;">
-                        Äú¿ÉÒÔä¯ÀÀµ½ÒÔÏÂÑÏÖØÎ¥·¨ÊĞ³¡Ö÷ÌåºÚÃûµ¥ĞÅÏ¢
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>±»ÓÀ¾ÃÔØÈë¾­ÓªÒì³£ÃûÂ¼</th><td>Ãû³Æ</td><td>×¡Ëù£¨¾­Óª³¡Ëù£©</td><td>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</td><td>Î´¹«Ê¾Äê¶È</td><td>Òì³£ÀàĞÍ</td><td>ÓÀ¾ÃÔØÈëÈÕÆÚ</td>
-                            </tr>
-                            <tr>
-                                <th>±»µõÏúÓªÒµÖ´ÕÕÎ´°ìÀí×¢ÏúÃûÂ¼</th><td>Ãû³Æ</td><td>×¡Ëù£¨¾­Óª³¡Ëù£©</td><td>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</td><td>Î´¹«Ê¾×ÊÖÊ×Ê¸ñĞÅÏ¢ </td><td>µõÏúÔ­Òò</td><td>µõÏúÈÕÆÚ</td>
-                            </tr>
-                            <tr>
-                                <th>±»µõÏúĞí¿ÉÖ¤Î´°ìÀí×¢Ïú»ò±ä¸üµÇ¼ÇÃûÂ¼</th><td>Ãû³Æ</td><td>×¡Ëù£¨¾­Óª³¡Ëù£©</td><td>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</td><td>×î½üÎŞ·¨ÁªÏµÊ±¼ä </td><td>±»µõÏúĞí¿ÉÖ¤Ãû³Æ¼°Ö¤ºÅ</td><td>µõÏúÈÕÆÚ</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 30px 0px 0px 50px;">
-                        <label class="font" style="vertical-align: middle;">ºÚÃûµ¥Ö÷ÌåÀà±ğ</label>&nbsp;&nbsp;
-                        <input type="radio" name="xxx" style="vertical-align: middle;">
-                        <label class="font" style="vertical-align: middle;">ÆóÒµ</label>&nbsp;
-                        <input type="radio" name="xxx" style="vertical-align: middle;">
-                        <label class="font" style="vertical-align: middle;">Å©Ãñ×¨ÒµºÏ×÷Éç</label>&nbsp;
-                        <input type="radio" name="xxx" style="vertical-align: middle;">
-                        <label class="font" style="vertical-align: middle;">¸öÌå¹¤ÉÌ</label>&nbsp;
-                        <input type="submit" class="submitBtn" style="border: none;" value="»ñÈ¡">
-                    </div>
-                    <div class="ctrlCYB font" style="width:900px;margin: 10px 0px 0px 50px;">
-                        <label class="font" style="vertical-align: middle;">Òì³£ÀàĞÍ£º</label>
-                        <select id="yzhmd" style="vertical-align: middle;" onchange="tableChange(this.id,'3')">
-                            <option value="1" selected>±»ÓÀ¾ÃÔØÈë¾­ÓªÒì³£ÃûÂ¼</option>
-                            <option value="2">±»µõÏúÓªÒµÖ´ÕÕÎ´°ìÀí×¢ÏúÃûÂ¼</option>
-                            <option value="3">±»µõÏúĞí¿ÉÖ¤Î´°ìÀí×¢Ïú»ò±ä¸üµÇ¼ÇÃûÂ¼</option>
-                        </select>
-                        <label class="font" style="vertical-align: middle;">¹«Ê¾Ê±¼ä£º</label>
-                        <label class="font" style="vertical-align: middle;">********</label>
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;" id="yzhmd1">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>ĞòºÅ</th><th>Ãû³Æ</th><th>×¡Ëù£¨¾­Óª³¡Ëù£©</th>
-                                <th>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</th><th>Òì³£ÀàĞÍ</th><th>ÓÀ¾ÃÔØÈëÈÕÆÚ</th>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;display: none;" id="yzhmd2">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>ĞòºÅ</th><th>Ãû³Æ</th><th>×¡Ëù£¨¾­Óª³¡Ëù£©</th>
-                                <th>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</th><th>µõÏúÔ­Òò</th><th>µõÏúÈÕÆÚ</th>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;display: none;" id="yzhmd3">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>ĞòºÅ</th><th>Ãû³Æ</th><th>×¡Ëù£¨¾­Óª³¡Ëù£©</th>
-                                <th>·¨¶¨´ú±íÈË£¨¸ºÔğÈË£©</th><th>±»µõÏúĞí¿ÉÖ¤Ãû³Æ¼°Ö¤ºÅ</th><th>µõÏúÈÕÆÚ</th>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1</td><td><a href="#">a</a></td><td>zszs</td><td>XXX</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB" style="width:370px;height:28px;margin: 10px 0px 30px 50px;text-align: left;">
-                        <label class="font" style="vertical-align: middle;">Ãû³Æ¹Ø¼ü×Ö</label>
-                        <input type="text" class="font" style="height: 20px;width:200px;">&nbsp;&nbsp;
-                        <input type="submit" class="submitBtn" style="border: none;" value="¼ìË÷">
-                    </div>
-                    <div class="ctrlCYB" style="width:530px;height:28px;margin: 10px 0px 30px 0px;text-align: center;">
-                        <label class="font" style="vertical-align: middle;line-height: 28px;">´Ë´¦·Å·ÖÒ³,tableÃ¿Ò³10ÌõĞÅÏ¢</label>
-                    </div>
-                </div>
-                <div id="con_one_4" class="hoverDiv" style="display:none">
-                    <div class="ctrlCYB" style="width:900px;margin: 30px 0px 0px 50px;text-align: center;">
-                        <label class="font" style="vertical-align: middle;">×¢²áºÅ</label>
-                        <input type="text" class="font" style="height: 20px;width:200px;">&nbsp;&nbsp;
-                        <input type="submit" class="submitBtn" style="border: none;" value="µÇÂ¼">
-                    </div>
-                    <div class="ctrlCYB font1" style="width:900px;margin: 30px 0px 0px 50px;">
-                        Æ¾µç×ÓÓªÒµÖ´ÕÕµÇÂ¼ºó£¬Äú¿ÉÒÔ½øĞĞÒÔÏÂĞÅÏ¢×ÔÖ÷Éê±¨
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 10px 0px 0px 50px;">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>Äê¶È±¨¸æ</th><td>³ö×ÊÈËÊµ½ÉÇé¿ö</td><td>×Ê²ú×´¿ö</td><td>ÔËÓª×´Ì¬</td><td>ÁªÏµ·½Ê½</td>
-                            </tr>
-                            <tr>
-                                <th>×ÊÖÊ×Ê¸ñĞí¿ÉÇé¿öÉê±¨</th><td>Ğí¿ÉÖ¤ĞÅÏ¢</td><td>×ÊÖÊ×Ê¸ñÖ¤ĞÅÏ¢</td><td>&nbsp;</td><td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ctrlCYB font1" style="width:900px;margin: 30px 0px 0px 50px;">
-                        ×¢ÒâÊÂÏî£º
-                    </div>
-                    <div class="ctrlCYB font1" style="width:900px;margin: 10px 0px 0px 50px;">
-                        Ã¿Äê1ÔÂ1ÈÕÖÁ6ÔÂ30ÈÕÖ÷¶¯Éê±¨&nbsp;&nbsp;&nbsp;&nbsp;È¡µÃ×ÊÖÊ×Ê¸ñÖ®ÈÕÆğ30ÈÕÄÚÖ÷¶¯Éê±¨
-                    </div>
-                    <div class="ctrlCYB font1" style="width:900px;margin: 10px 0px 0px 50px;">
-                        ·ñÔò½øÈëÒì³£ÃûÂ¼£¬ÈıÄêÄÚ¿É²¹±¨&nbsp;&nbsp;&nbsp;&nbsp;×ÊÖÊ×Ê¸ñÖÕÖ¹Ö®ÈÕÆğ30ÈÕÄÚÖ÷¶¯Éê±¨
-                    </div>
-                    <div class="ctrlCYB font1" style="width:900px;margin: 10px 0px 0px 50px;">
-                        ÈıÄêºóÔØÈëÓÀ¾Ã¾­ÓªÒì³£µÄºÚÃûµ¥&nbsp;&nbsp;&nbsp;&nbsp;Éê±¨ÈË¶ÔÉê±¨ĞÅÏ¢ÄÚÈİµÄÕæÊµĞÔ¡¢ºÏ·¨ĞÔ¸ºÔğ
-                    </div>
-                </div>
-                <div id="con_one_5" class="hoverDiv" style="display:none">
-                    <div class="ctrlCYB" style="width:900px;margin: 30px 0px 0px 50px;text-align: center;">
-                        <input type="button" class="submitBtn" style="width:120px;height:40px;border: none;" value="Ãû³Æ²éÖØ">&nbsp;&nbsp;
-                        <input type="button" class="submitBtn" style="width:120px;height:40px;border: none;" value="ÉèÁ¢µÇ¼Ç">&nbsp;&nbsp;
-                        <input type="button" class="submitBtn" style="width:120px;height:40px;border: none;" value="¹ÉÈ¨³öÖÊµÇ¼Ç">&nbsp;&nbsp;
-                        <input type="button" class="submitBtn" style="width:120px;height:40px;border: none;" value="×¢ÏúµÇ¼Ç">
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 20px 0px 0px 50px;text-align: center;">
-                        <input type="button" class="submitBtn" style="width:120px;height:40px;border: none;" value="Ãû³ÆµÇ¼Ç">&nbsp;&nbsp;
-                        <input type="button" class="submitBtn" style="width:120px;height:40px;border: none;" value="±¸°¸µÇ¼Ç">&nbsp;&nbsp;
-                        <input type="button" class="submitBtn" style="width:120px;height:40px;border: none;" value="¶¯²úµÖÑºµÇ¼Ç">&nbsp;&nbsp;
-                        <input type="button" class="submitBtn" style="width:120px;height:40px;border: none;" value="ÒµÎñ°ìÀí×´Ì¬²éÑ¯">
-                    </div>
-                    <div class="ctrlCYB" style="width:900px;margin: 30px 0px 10px 50px;">
-                        <table cellpadding="0" cellspacing="0" width="100%" style="margin: 0px;">
-                            <tr>
-                                <th>°ìÊÂÖ¸ÄÏ</th><th>µÇ¼ÇÎÄÊé</th><th>Ïà¹Ø·¨¹æ</th>
-                                <th>ºşÄÏÊ¡¹¤ÉÌÏµÍ³ÍøÕ¾</th><th>ºşÄÏÊ¡ÓĞ¹Ø²¿ÃÅÍøÕ¾</th>
-                            </tr>
-                            <tr>
-                                <td><a href="#">ÉèÁ¢µÇ¼Ç</a></td><td><a href="#">ÉêÇë±í¸ñ</a></td><td><a href="#">·¨ÂÉ</a></td>
-                                <td>
-                                    <a href="#">Ê¡¾Ö</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">³¤É³</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">ÖêÖŞ</a>
-                                </td>
-                                <td>
-                                    <a href="#">ÍøÉÏÕşÎñ´óÌü</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">¼à²ìÌü</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">¹«°²Ìü</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">±ä¸üµÇ¼Ç</a></td><td><a href="#">ÎÄÊé·¶±¾</a></td><td><a href="#">·¨¹æ</a></td>
-                                <td>
-                                    <a href="#">ÏæÌ¶</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">ºâÑô</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">ÉÛÑô</a>
-                                </td>
-                                <td>
-                                    <a href="#">»·±£Ìü</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">Ê³Æ·Ò©Æ·¼à¹Ü¾Ö</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">ÖÊ¼à¾Ö</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">±¸°¸µÇ¼Ç</a></td><td><a href="#">²ÄÁÏ¹æ·¶</a></td><td><a href="#">¹æÕÂ</a></td>
-                                <td>
-                                    <a href="#">ÔÀÑô</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">³£µÂ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">ÕÅ¼Ò½ç</a>
-                                </td>
-                                <td><a href="#">¸ü¶à</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">×¢ÏúµÇ¼Ç</a></td><td>&nbsp;</td><td><a href="#">¹æ·¶ĞÔÎÄ¼ş</a></td>
-                                <td>
-                                    <a href="#">ÒæÑô</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">³»Öİ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">ÓÀÖİ</a>
-                                </td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">ÆäËûÊÂÎñ</a></td><td>&nbsp;</td><td>&nbsp;</td>
-                                <td>
-                                    <a href="#">»³»¯</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">Â¦µ×</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <a href="#">ÏæÎ÷</a>
-                                </td>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom font1" style="line-height: 50px;text-align: center;">
-            &copy;°æÈ¨ËùÓĞ&nbsp;&nbsp;&nbsp;¹ã¶«ÖÚÍûÍ¨¿Æ¼¼¹É·İÓĞÏŞ¹«Ë¾
-        </div>
+<div class="box">
+  <div class="main_area">
+    <div class="main_top">
+      <div class="main_top_menu">
+        <a class="main_top_menu_btn hide_box"  href="javascript:void(0)"><img src="images/close-btn.png" width="16" height="16" /></a>
+        <a class="main_top_menu_btn hide_box"  href="javascript:void(0)"><img src="images/min-btn.png" width="16" height="16" /></a>
+      </div>
     </div>
+    <div class="main_logo"></div>
+    <a href="scan.html" class="main_btn_scan">å…¨é¢æ£€æµ‹</a>
+    <a class="main_btn_link">é€‰æ‹©æ–‡ä»¶æ£€æµ‹</a>
+  </div>
+  <div class="bottom_area">
+  	<div class="bottom_area_menu">
+   	  <a class="bottom_area_menu_btn" href="log.html">
+        	<div class="bottom_area_menu_btn_icon"><img src="images/icon-rzcx.png" width="32" height="32" /></div>
+            <div class="bottom_area_menu_btn_name">æ—¥å¿—æŸ¥è¯¢</div>
+      </a>
+      <a class="bottom_area_menu_btn" href="set.html">
+   	  <div class="bottom_area_menu_btn_icon"><img src="images/icon-pzgl.png" width="32" height="32" /></div>
+            <div class="bottom_area_menu_btn_name">é…ç½®ç®¡ç†</div>
+      </a>
+      <a class="bottom_area_menu_btn" href="statist.html">
+        	<div class="bottom_area_menu_btn_icon"><img src="images/icon-tjfx.png" width="32" height="32" /></div>
+            <div class="bottom_area_menu_btn_name">ç»Ÿè®¡åˆ†æ</div>
+      </a>
+      <a class="bottom_area_menu_btn" href="javascript:void(0)">
+        	<div class="bottom_area_menu_btn_icon"><img src="images/icon-gzjc.png" width="32" height="32" /></div>
+            <div class="bottom_area_menu_btn_name">å…¬ç« æ£€æµ‹</div>
+      </a>
+    </div>
+    <div class="bottom_area_info_short">
+    	<table class="bottom_area_info_list" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="images/icon-computer.png" width="24" height="24" />æ€»æ£€æµ‹æ•°ï¼š0ä»¶</td>
+          </tr>
+          <tr>
+            <td><img src="images/icon-time.png" width="24" height="24" />è¿è¡Œæ—¶é•¿ï¼š0åˆ†</td>
+          </tr>
+        </table>
+    </div>
+  </div>
+</div>
+
+<!-- æ‚¬æµ®çƒ -->
+<div class="floating_wrap rotate_info">
+  <div class="floating_box">
+    <div class="floating_head show_box">
+      <div class="floating_head_ball">
+        <div class="floating_head_ball_bg"></div>
+        <div class="floating_head_ball_text">80<span>%</span></div>
+      </div>
+      <div class="floating_head_detection">
+        <p><i class="icon-check"></i><span>80ä»¶</span></p>
+        <p><i class="icon-cross"></i><span>20ä»¶</span></p>
+      </div>
+    </div>
+    <div class="floating_footer">
+      <p>å®Œæ•´æ€§<span>å¤±è´¥ï¼š5ä»¶</span></p>
+      <p>å¯ç”¨æ€§<span>å¤±è´¥ï¼š5ä»¶</span></p>
+      <p>çœŸå®æ€§<span>å¤±è´¥ï¼š5ä»¶</span></p>
+      <p>å®‰å…¨æ€§<span>å¤±è´¥ï¼š5ä»¶</span></p>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-2.1.1.min.js" type="text/javascript" ></script>
+<script src="js/Tdrag.min.js" type="text/javascript" ></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    boxMiddle();
+    $(".show_box").dblclick(function(){
+      boxMiddle();
+      $(".box").show();
+    });
+
+    $(".hide_box").click(function(){
+      $(".box").hide();
+    });
+
+    // æ‹–æ‹½æ‚¬æµ®çª—
+    $(".floating_wrap").Tdrag({
+      scope:"body"
+    });
+
+    // æ‹–åŠ¨box
+    $(".box").Tdrag({
+      scope:"body",
+      handle:".main_top"
+    });
+
+    // boxæ°´å¹³å‚ç›´å±…ä¸­
+    function boxMiddle() {
+      if($(".box").css("position")!="fixed"){  
+        $(".box").css("position","absolute");  
+        var dw = $(window).width();  
+        var ow = $(".box").outerWidth();  
+        var dh = $(window).height();  
+        var oh = $(".box").outerHeight();  
+        var l = (dw - ow) / 2;  
+        var t = (dh - oh) / 2 > 0 ? (dh - oh) / 2 : 10;  
+        var lDiff = $(".box").offset().left - $(".box").position().left;  
+        var tDiff = $(".box").offset().top - $(".box").position().top;  
+        l = l + $(window).scrollLeft() - lDiff;  
+        t = t + $(window).scrollTop() - tDiff;  
+        $(".box").css("left",l + "px");  
+        $(".box").css("top",t + "px");  
+      } 
+    }
+  });
+</script>
 </body>
 </html>
